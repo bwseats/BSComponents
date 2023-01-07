@@ -9,10 +9,64 @@ body {
 }
 
 .content {
-    flex-grow: 1 0 auto;
+    flex: 1 0 auto;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 footer {
     flex-shrink: 0;
+}
+
+.bgimage {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/GridBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heroText {
+    font-family: 'Righteous', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(195, 255, 0);
+}
+
+.minHeight {
+    min-height: 85vh;
+}
+
+.maxWidth {
+    max-width: 100vh;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.list-group-item {
+    border-color: #999;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #3d3d3d;
+}
+
+.nav-pills .nav-link {
+    color: #a1a1a1;
+}
+
+.icon-color-active {
+    color: white
+}
+
+.icon-color {
+    color: #a1a1a1
+}
+
+.radio {
+    accent-color: red
 }
