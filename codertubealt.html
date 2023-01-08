@@ -20,8 +20,8 @@
 
 </head>
 
-<body>
-    <header>
+<body class="overflow-x-hidden">
+    <header class="position-fixed d-flex z-3 header-width bg-dark">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">
@@ -50,559 +50,618 @@
     </header>
 
 
-    <main class="content">
+    <main class="content pt-5">
         <div class="container-fluid gx-0">
             <div class="row gx-2">
                 <div class="col-2">
-                    <ul class=" text-light">
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-secondary w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-house pe-1"></i>
-                                <span class="d-none d-md-inline-block">Home</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-play-circle pe-1"></i>
-                                <span class="d-none d-md-inline-block">Shorts</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-play-btn pe-1"></i>
-                                <span class="d-none d-md-inline-block">Subscriptions</span>
-                            </button>
-                        </li>
-                        <hr class="minWidth">
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-book pe-1"></i>
-                                <span class="d-none d-md-inline-block">Library</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-clock pe-1"></i>
-                                <span class="d-none d-md-inline-block">History</span>
-                            </button>
-                        </li>
-                        <hr class="minWidth">
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-fire pe-1"></i>
-                                <span class="d-none d-md-inline-block">Trending</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-music-note pe-1"></i>
-                                <span class="d-none d-md-inline-block">Music</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-film pe-1"></i>
-                                <span class="d-none d-md-inline-block">Movies & TV</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-broadcast pe-1"></i>
-                                <span class="d-none d-md-inline-block">Live</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-controller pe-1"></i>
-                                <span class="d-none d-md-inline-block">Gaming</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-newspaper pe-1"></i>
-                                <span class="d-none d-md-inline-block">News</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-trophy pe-1"></i>
-                                <span class="d-none d-md-inline-block">Sports</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-lightbulb pe-1"></i>
-                                <span class="d-none d-md-inline-block">Learning</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-bag pe-1"></i>
-                                <span class="d-none d-md-inline-block">Fashion</span>
-                            </button>
-                        </li>
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <i class="bi bi-broadcast-pin pe-1"></i>
-                                <span class="d-none d-md-inline-block">Podcasts</span>
-                            </button>
-                        </li>
-                        <hr class="minWidth">
-                        <li class="lead fs-6 mb-0">
-                            <button class="btn btn-dark w-100 text-md-start text-center minWidth">
-                                <span class="d-none d-md-inline-block">More...</span>
-                            </button>
-                        </li>
-                    </ul>
+                    <div class="position-fixed sidebar-width scroll-sidebar">
+                        <ul class="text-light ps-3">
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-secondary w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-house pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Home</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-play-circle pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Shorts</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-play-btn pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Subscriptions</span>
+                                </button>
+                            </li>
+                            <hr class="minWidth">
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-book pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Library</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-clock pe-1"></i>
+                                    <span class="d-none d-md-inline-block">History</span>
+                                </button>
+                            </li>
+                            <hr class="minWidth">
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-fire pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Trending</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-music-note pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Music</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-film pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Movies & TV</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-broadcast pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Live</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-controller pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Gaming</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-newspaper pe-1"></i>
+                                    <span class="d-none d-md-inline-block">News</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-trophy pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Sports</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-lightbulb pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Learning</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-bag pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Fashion</span>
+                                </button>
+                            </li>
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <i class="bi bi-broadcast-pin pe-1"></i>
+                                    <span class="d-none d-md-inline-block">Podcasts</span>
+                                </button>
+                            </li>
+                            <hr class="minWidth">
+                            <li class="lead fs-6 mb-0">
+                                <button class="btn btn-dark w-100 text-md-start text-center minWidth">
+                                    <span class="d-none d-md-inline-block">More...</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-10 ps-3 pe-3">
                     <div class="row g-2">
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/longTitle.png" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>This is an exceptionally long video title to show that all the cards keep the same height</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        benjamin seats
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        0 Views &#x2022; Uploaded 1 second ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/longTitle.png" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>This is an exceptionally long video title to show that all the cards
+                                                keep the same height</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary text-truncate mb-0">
+                                            benjamin seats
+                                        </p>
+                                        <p class="text-start text-secondary text-truncate mb-0">
+                                            0 Views &#x2022; Uploaded 1 second ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/imgPlaceholder.png" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>An Interesting Title</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            coderTuber
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            -431 Views &#x2022; Uploaded 3 years from now
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-0 mb-sm-4">
                             <div class="card  border border-secondary h-100">
-                                <img src="/img/bobby.jpg" class="card-img-top" alt="video thumbnail">
-                                <div class="card-body">
-                                    <h4 class="card-text text-start text-light text-truncate fs-6">
-                                        <strong>New Bootstrap Feature - CSS Variables</strong>
-                                    </h4>
-                                    <p class="text-start text-secondary mb-0">
-                                        Coder Foundry
-                                    </p>
-                                    <p class="text-start text-secondary mb-0">
-                                        1.3B Views &#x2022; Uploaded 2 months ago
-                                    </p>
-                                </div>
+                                <button>
+                                    <img src="/img/bobby.jpg" class="card-img-top card-image-height" alt="video thumbnail">
+                                    <div class="card-body">
+                                        <h4 class="card-text text-start text-light text-truncate fs-6">
+                                            <strong>New Bootstrap Feature - CSS Variables</strong>
+                                        </h4>
+                                        <p class="text-start text-secondary mb-0">
+                                            Coder Foundry
+                                        </p>
+                                        <p class="text-start text-secondary mb-0">
+                                            1.3B Views &#x2022; Uploaded 2 months ago
+                                        </p>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -628,4 +687,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
