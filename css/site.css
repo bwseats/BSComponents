@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -35,38 +36,98 @@ footer {
     color: rgb(195, 255, 0);
 }
 
-.minHeight {
-    min-height: 85vh;
+ul {
+    list-style: none;
 }
 
-.maxWidth {
-    max-width: 100vh;
+.sticky-col {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: dark;
+    overflow-y: scroll;
 }
 
-.absolute {
-    position: absolute;
+.list-center {
+    display: inline-block;
+    text-align: left;
 }
 
-.list-group-item {
-    border-color: #999;
-}
-
-.nav-pills .nav-link.active {
-    background-color: #3d3d3d;
-}
-
-.nav-pills .nav-link {
-    color: #a1a1a1;
-}
-
-.icon-color-active {
-    color: white
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .icon-color {
-    color: #a1a1a1
+    color: white;
 }
 
-.radio {
-    accent-color: red
+.minWidth {
+    min-width: 2.5rem;
+}
+
+.header-width {
+    width: 100%;
+}
+
+.sidebar-wrapper {
+    max-width: 100%;
+    height: 75vh;
+}
+
+.scroll-sidebar {
+    position: fixed;
+    overflow-y: scroll;
+    height: 75vh;
+}
+
+.nav-wrapper {
+    position: absolute;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 1;
+    overflow-y: scroll;
+    width: 320px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-sidebar::-webkit-scrollbar {
+    width: 6px;
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: dark;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4d5358;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidebar-width {
+    width: inherit;
 }
