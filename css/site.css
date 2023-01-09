@@ -73,7 +73,7 @@ ul {
 }
 
 .header-width {
-    width: 100%;
+    width: 100vw;
 }
 
 .sidebar-wrapper {
