@@ -155,74 +155,55 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 mt-5">
-                    <h2 class="accordion-header text-center" id="headingOne">
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            <h5 class="display-6">Contact Us</h5>
-                        </button>
-                    </h2>
-                </div>
-                <div class="col-12">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <div id="collapseOne" class="accordion-collapse collapse-show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <form action="#">
-                                        <div class="row g-2">
-                                            <div class="col-12 col-md-6">
-                                                <label class="form-label" for="firstname">
-                                                    First Name
-                                                </label>
-                                                <input class="form-control" type="text" id="firstname"
-                                                    placeholder="First name" aria-label="First name" required />
+                <div class="col col-12 py-3">
+                    <h1 class="fs-3 text-center lead" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">
+                        Contact Us
+                    </h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="multi-collapse collapse show" id="multiCollapseExample1" style="">
+                                <div class="card card-body">
+                                    <div class="p-2">
+                                        <form action="#">
+                                            <div class="row g-2">
+                                                <div class="col col-12 col-md-6">
+                                                    <label class="form-label" for="firstname">
+                                                        First Name</label>
+                                                    <input class="form-control" type="text" id="firstname" placeholder="First name" aria-label="First name" required="">
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <label class="form-label" for="lastname">
+                                                        Last Name</label>
+                                                    <input class="form-control" type="text" id="lastname" placeholder="Last name" aria-label="Last name" required="">
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <label class="form-label" for="email">
+                                                        Email</label>
+                                                    <input class="form-control" type="email" id="email" placeholder="Email" aria-label="Email" required="">
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <label class="form-label" for="phone">
+                                                        Phone (optional)</label>
+                                                    <input class="form-control" type="tel" id="phone" placeholder="Phone" aria-label="Phone">
+                                                </div>
+                                                <div class="col col-12 col-md-12">
+                                                    <label class="form-label" for="subject">
+                                                        Subject</label>
+                                                    <input class="form-control" type="text" id="subject" placeholder="Subject" aria-label="Subject" required="">
+                                                </div>
+                                                <div class="col col-12 col-md-12">
+                                                    <label class="form-label" for="Message">
+                                                        Message</label>
+                                                    <textarea class="form-control" type="text" id="message" placeholder="Message" ariea-label="message" rows="4"></textarea>
+                                                </div>
+                                                <div class="col col-12 col-md-12 pt-2 text-end">
+                                                    <button ty="submit" class="btn btn-primary">
+                                                        Submit
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
-                                                <label class="form-label" for="lastname">
-                                                    Last Name
-                                                </label>
-                                                <input class="form-control" type="text" id="lastname"
-                                                    placeholder="Last name" aria-label="Last name" required />
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <label class="form-label" for="email">
-                                                    Email
-                                                </label>
-                                                <input class="form-control" type="email" id="email" placeholder="Email"
-                                                    aria-label="Email" required />
-
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <label class="form-label" for="phone">
-                                                    Phone (optional)
-                                                </label>
-                                                <input class="form-control" type="tel" id="phone" placeholder="Phone"
-                                                    aria-label="Phone" />
-
-                                            </div>
-                                            <div class="col-12">
-                                                <label class="form-label" for="subject">
-                                                    Subject
-                                                </label>
-                                                <input class="form-control" type="text" id="subject"
-                                                    placeholder="Subject" aria-label="Subject" required />
-                                            </div>
-                                            <div class="col-12">
-                                                <label class="form-label" for="message">
-                                                    Message
-                                                </label>
-                                                <textarea class="form-control" type="text" id="message"
-                                                    placeholder="Message" aria-label="Message" rows="4"
-                                                    required></textarea>
-                                            </div>
-                                            <div class="col-12 text-end pt-2">
-                                                <button type="submit" class="btn btn-primary">Submit
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
