@@ -50,7 +50,7 @@
                 <div class="col-12 col-md-2 p-0 px-md-2">
                     <div class="col-12 p-0">
                         <button class="btn btn-outline-primary btn-lg w-100 mb-3" data-bs-toggle="modal"
-                            data-bs-target="#emailModal">
+                                data-bs-target="#emailModal">
                             <i class="bi bi-pencil-square"></i>
                             New Email
                         </button>
@@ -105,9 +105,9 @@
                 <div class="col-12 col-md-10 border border-1 rounded-3 p-3">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <strong>Dane Whitman</strong> -
-                            <span>Extended Warranty</span>
-                            <p class="text-muted ps-5 mb-0">We've been trying to reach you concerning your vehicle's extended warranty...</p>
+                            <strong id="inboxEmail">Dane Whitman</strong> -
+                            <span id="inboxSubject">Extended Warranty</span>
+                            <p class="text-muted ps-5 mb-0" id="inboxMessage">We've been trying to reach you concerning your vehicle's extended warranty...</p>
                         </li>
                         <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <strong>Dane Whitman</strong> -
@@ -169,12 +169,12 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">From: Dane Whitman</h1>
+                    <h1 class=" display-1 modal-title fs-5" id="modalEmail">From: Dane Whitman</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="fs-4">Subject: Extended Warranty</p>
-                    <p>
+                    <p id="modalSubject" class="fs-4">Subject: Extended Warranty</p>
+                    <p id="modalMessage">
                         We've been trying to reach you concerning your vehicle's extended warranty. You should've
                         received a notice in the mail about your car's extended warranty eligibility. Since we've not
                         gotten a response, we're giving you a final courtesy email before we close out your file. To
@@ -199,7 +199,7 @@
                         <div class="row row-cols-1 align-items-center">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">To: </label>
                             <div class="col-sm-10">
-                                <input style="width: 350px;" type="email" class="form-control" id="inputEmail3">
+                                <input style="width: 350px;" type="email" class="form-control" id="recipient">
                             </div>
                         </div>
                     </h1>
@@ -209,12 +209,12 @@
                     <form action="">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Subject:</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                            <input type="email" class="form-control" id="subject"
                                 placeholder="Subject">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Message:</label>
-                            <textarea type="text-area" class="form-control" id="exampleFormControlInput1"
+                            <textarea type="text-area" class="form-control" id="message"
                                 placeholder="Message"></textarea>
                         </div>
                     </form>
@@ -222,15 +222,24 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-secondary">Save as draft</button>
-                    <button type="button" class="btn btn-primary">Reply</button>
+                    <button type="button" class="btn btn-primary" id="send-button">Send</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    
+    <!-- custom js -->
+    <script src="/js/site.js"></script>
+    <script>
+        // run some code when the send button is clicked
+        let sendButton = document.getElementById('send-button');
+        sendButton.addEventListener('click', sendEmailToModal);
+    </script>
 </body>
 
 
